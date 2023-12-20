@@ -1,0 +1,103 @@
+@charset "UTF-8";
+a { color: #3fbf79; text-decoration: none; cursor: pointer; }
+a:focus { outline: 0; outline-offset: -2px; }
+a:hover, a:active { outline: 0; background-color: transparent; color: #3fbf79; text-decoration: none; }
+.clear{
+	clear: both;
+}
+
+#menuHeadA {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 900;
+	margin-bottom: 0;
+	overflow: hidden;
+	position: static;
+	background: #ffca5f;
+	filter: alpha(opacity=98);
+	opacity: 0.98;
+}
+.menuHeadA_box {
+	width: 100%;
+	max-width: 1024px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.typeA_menu {  display: table; margin: 0 auto; }
+.typeA_menu > li { display: inline-block; margin-top: 15px; }
+.typeA_menu > li a {
+/*!font-family: 'JejuGothic';          --폰트 생기 */
+	font-size: 20px;
+	color: #000000;
+	display: block;
+	letter-spacing: 2px;
+}
+.typeA_menu > li a:hover,
+.typeA_menu > li a:active { color: #000000; background-color: #a1d852;}
+
+
+
+@media (max-width: 1050px) {
+	.typeA_menu > li { margin-top: 15px; }
+}
+
+
+@media (max-width: 980px) {
+	.typeA_menu > li { margin-top: 15px; }
+	.typeA_menu > li a { letter-spacing: 0; }
+	.container_box_unit > li { width: 33.333%; }
+}
+
+@media (max-width: 880px) {
+	.typeA_menu > li { margin-top: 13px; }
+	.typeA_menu > li a { font-size: 17px; }
+}
+
+
+@media (max-width: 800px) {
+	.typeA_menu > li a { font-size: 16px; }
+  #container { margin-top: 5px; }
+}
+
+
+@media (max-width: 730px) {
+	.typeA_menu > li { margin-top: 13px; }
+	.typeA_menu > li a { font-size: 15px; }
+	.container_box_unit > li { width: 50%; }
+}
+
+
+@media (max-width: 670px) {
+	.typeA_menu > li a { font-size: 14px; }
+}
+
+@media (max-width: 580px) {
+	.typeA_menu > li { margin-top: 13px; }
+	.typeA_menu > li a { font-size: 13px; }
+}
+
+
+.items{
+  width: 300px;
+}
+.items > li img {width:300px;}
+.itmes .pname{
+	font-size: 19px;
+  font-weight: bold;
+	margin-top: 20px;
+}
+.itmes .pprice{
+	margin-top: 10px;
+}
+.itmes .dcprice{
+	margin-top: 10px;
+}
+.box{
+	float:left;
+}
