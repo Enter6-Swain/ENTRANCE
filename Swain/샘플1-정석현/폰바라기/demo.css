@@ -1,0 +1,34 @@
+#menuHeadA {
+	width: 100%;
+	height: 50px;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 900;
+	margin-bottom: 0;
+	overflow: hidden;
+	position: static;
+	background: #ffca5f;
+	filter: alpha(opacity=98);
+	opacity: 0.98;
+}
+.menuHeadA_box {
+	width: 100%;
+	max-width: 1024px;
+	height: 50px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+.typeA_menu {  display: table; margin: 0 auto; }
+.typeA_menu > li { display: inline-block; margin-top: 15px; }
+.typeA_menu > li a {
+/*!font-family: 'JejuGothic';          --폰트 생기 */
+	font-size: 20px;
+	color: #000000;
+	display: block;
+	letter-spacing: 2px;
+  text-decoration: none; cursor: pointer;
+}
+.typeA_menu > li a:hover,
+.typeA_menu > li a:active { color: #000000; background-color: #a1d852;}
