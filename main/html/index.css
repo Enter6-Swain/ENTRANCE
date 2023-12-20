@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 70px;
+    text-align: center;
+}
+
+section a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section div {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    transition: background-color 0.3s;
+    height: 100%;
+}
+
+section div:hover{
+    background-color: #e0e0e0;
+    
+}
+
+section div img{
+    width: 100%;
+    height: auto;
+}
