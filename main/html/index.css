@@ -1,21 +1,28 @@
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
 }
 
-section{
+section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
     gap: 20px;
     text-align: center;
 }
 
-section div{
+section div {
     border: 1px solid #ddd;
     padding: 20px;
     background-color: #f9f9f9;
+}
+
+section div img{
+    width: 100%;
+    height: auto;
 }
