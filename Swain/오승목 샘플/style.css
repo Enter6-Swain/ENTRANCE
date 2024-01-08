@@ -1,0 +1,107 @@
+li, a, button{
+    text-decoration: none;
+    color: #7d7d7d;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 30px;
+}
+.logo{
+    color: #000;
+    cursor: pointer;
+}
+header .header-left ul {
+    display: flex;
+}
+.nav_links{
+    list-style: none;
+}
+.nav_links li{
+    display: inline-block;
+    padding: 0 20px;
+}
+/* 상단바 카테고리에 마우스를 올리면 버튼 색상 변경에 대한 설정 */
+.nav_links li a{
+    transition: all 0.3s ease 0s;
+}
+/* 상단바 카테고리를 클릭하면 버튼 색상과 글자 색상이 변경 */
+.nav_links li a:hover{
+    color: #eee;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: rgba(0, 136, 169, 0.8);
+}
+button {
+    margin-left: 16px;
+    padding: 9px 25px;
+    border: none;
+    cursor: pointer;
+    background-color: #fff;
+}
+/* header설정 */
+/* 모든 요소 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 70px;
+    text-align: center;
+}
+
+
+section a{
+    text-decoration: none;
+    color: inherit;
+}
+
+section div {
+    border: 1px solid #ddd;
+    padding: 20px;
+    background-color: inherit;
+    transition: background-color 0.3s;
+    height: 26rem;
+    width: 16rem;
+}
+/* div위 마우스 올리면 색상변경 */
+section div:hover{
+    background-color: #e0e0e0;
+}
+
+section div img{
+    width: 100%;
+    height: auto;
+    filter: grayscale(1);
+    transition:
+    scale 750ms ease-out, filter 250ms ease-in-out;
+}
+section div img:hover {
+    scale: 1.05;
+    filter: grayscale(0);
+}
+
+a, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
